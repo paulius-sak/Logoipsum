@@ -2,21 +2,23 @@ import styles from "./Navbar.module.scss";
 import Logo from "../../assets/logo.svg";
 import PropTypes from "prop-types";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
+
 
 const Navbar = ({ links }) => {
   return (
     <section className={styles.wrapper}>
       <section className={styles.logoMenuWrapper}>
-        <a href="/">
+        <Link to="/">
           <img src={Logo} alt="logo" />
-        </a>
+        </Link>
         <nav className={styles.menu}>
           <ul className={styles.links}>
             {links.map((link) => {
               return (
-                <a href={link.href} key={link.id}>
-                  {link.title}
-                </a>
+                <li key={link.id}>
+                  <Link to={link.href}>{link.title}</Link>
+                </li>
               );
             })}
           </ul>
