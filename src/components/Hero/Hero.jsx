@@ -1,5 +1,4 @@
 import Button from "../Button/Button";
-import CategoryList from "./CategoryList/CategoryList";
 import styles from "./Hero.module.scss";
 import Search from "./Search/Search";
 import { CiSearch } from "react-icons/ci";
@@ -23,9 +22,7 @@ const Hero = () => {
           </div>
         </Button>
       </section>
-      <section>
-        <CategoryList/>
-      </section>
+      
     </section>
   );
 };
