@@ -1,12 +1,16 @@
 import PropTypes from "prop-types";
 import styles from "./CategoryCard.module.scss";
+import UrlIcon from "../../common/UrlIcon";
 
 const CategoryCard = ({ category }) => {
-  const { name, icon } = category;
-  const Icon = icon;
+  const {name} = category;
+  
   return (
     <section className={styles.wrapper}>
-      <Icon fontSize={48} color={category.color} />
+      <UrlIcon
+        url={category.url}
+        style={{ width: 48, height: 48, backgroundColor: category.color }}
+      />
       <p className={styles.name}>{name}</p>
     </section>
   );
@@ -14,9 +18,10 @@ const CategoryCard = ({ category }) => {
 
 CategoryCard.propTypes = {
   category: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     name: PropTypes.string.isRequired,
-    icon: PropTypes.elementType.isRequired,
     color: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
   }).isRequired,
 };
 
