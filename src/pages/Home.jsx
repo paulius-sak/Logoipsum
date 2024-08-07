@@ -1,14 +1,13 @@
-import Hero from "../components/Hero/Hero"
-import CategoryList from "../components/Hero/CategoryList/CategoryList"
-
+import Hero from "../components/Hero/Hero";
+import CategoryList from "../components/CategoryList/CategoryList";
 
 const Home = () => {
   return (
     <div>
-        <Hero/>
-        <CategoryList/>
+      <Hero />
+      <CategoryList />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

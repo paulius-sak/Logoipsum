@@ -3,8 +3,7 @@ import Logo from "../../assets/logo.svg";
 import PropTypes from "prop-types";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
-import {ROUTES } from "../../router/consts";
-
+import { ROUTES } from "../../router/consts";
 
 const Navbar = ({ links }) => {
   return (
@@ -26,7 +25,9 @@ const Navbar = ({ links }) => {
         </nav>
       </section>
       <section className={styles.buttonWrapper}>
-        <Button>Login / Sign Up</Button>
+        <Link to={ROUTES.LOGIN}>
+          <Button> Login / Sign Up</Button>
+        </Link>
       </section>
     </section>
   );
