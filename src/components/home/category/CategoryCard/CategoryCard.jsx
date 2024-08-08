@@ -1,8 +1,8 @@
 import { useNavigate, generatePath } from "react-router-dom";
 import PropTypes from "prop-types";
 import styles from "./CategoryCard.module.scss";
-import UrlIcon from "../common/UrlIcon";
-import { ROUTES } from "../../router/consts";
+import UrlIcon from "../../../common/UrlIcon";
+import { ROUTES } from "../../../../router/consts";
 
 const CategoryCard = ({ category }) => {
   const { name } = category;
