@@ -33,7 +33,7 @@ BusinessList.propTypes = {
         })
       ),
     })
-  ).isRequired,
+  ),
   category: PropTypes.string,
   className: PropTypes.string,
 };

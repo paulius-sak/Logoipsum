@@ -12,7 +12,8 @@
 :root {
   --primary-color: #8056eb;
   --grey-light: #a8a8a8;
-  --border: #f1f1f1
+  --border: #f1f1f1;
+  --error: brown;
 }
 
 

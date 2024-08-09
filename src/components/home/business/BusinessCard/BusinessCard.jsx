@@ -2,7 +2,7 @@ import styles from "./BusinessCard.module.scss";
 import Button from "../../../Button/Button";
 import PropTypes from "prop-types";
 
-const BusinessCard = ({ business }) => {
+const BusinessCard = ({ business  }) => {
   return (
     <div className={styles.card}>
       {business.images.length && (
