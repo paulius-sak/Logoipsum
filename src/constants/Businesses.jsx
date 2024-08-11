@@ -50,7 +50,46 @@ const businesses = [
     email: "food@gmail.com",
     images: [
       {
-        url: "https://grainger-prod.adobecqms.net/content/dam/grainger/gus/en/public/digital-tactics/know-how/hero/kh-qualified-vs-unqualified-electrical-workers_feat.jpg",
+        url: "https://porterchester.edu/sites/default/files/field/image/What-Can-I-Do-as-an-Electrician.jpg",
+      },
+    ],
+  },
+  {
+    _id: "762ea59ed296417abaedfdfc",
+    name: "Telefonu remontas",
+    address: "Remonto g. 17, Vilnius",
+    category: "repair",
+    contactPerson: "Jonas Sniegas",
+    email: "food@gmail.com",
+    images: [
+      {
+        url: "https://www.euractiv.com/wp-content/uploads/sites/2/2022/03/right-to-repair.jpg",
+      },
+    ],
+  },
+  {
+    _id: "862ea59ed296417abaedfdfc",
+    name: "Dazymo darbai",
+    address: "Remonto g. 17, Vilnius",
+    category: "painting",
+    contactPerson: "Regina",
+    email: "paint@gmail.com",
+    images: [
+      {
+        url: "https://cdn.shopify.com/s/files/1/1635/2395/files/IMG_20181202_164414-01_1024x1024.jpeg?v=1570624624",
+      },
+    ],
+  },
+  {
+    _id: "962ea59ed296417abaedfdfc",
+    name: "Santechnikas Rimas",
+    address: "Remonto g. 17, Vilnius",
+    category: "plumbing",
+    contactPerson: "Rimas",
+    email: "pipes@gmail.com",
+    images: [
+      {
+        url: "https://www.mignalina.lt/wp-content/uploads/2022/08/26/SEO-santechnikas-1024x1024.jpg",
       },
     ],
   },

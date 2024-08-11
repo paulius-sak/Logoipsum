@@ -19,6 +19,7 @@ const BusinessCard = ({ business  }) => {
         <p className={styles.address}>{business.address}</p>
         <Button>Book now</Button>
       </div>
+      
     </div>
   );
 };

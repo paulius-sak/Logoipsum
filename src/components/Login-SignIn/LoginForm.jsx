@@ -3,6 +3,7 @@ import { useState } from "react";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../../router/consts";
+import LoginSocial from "./LoginSocial/LoginSocial";
 
 const LoginForm = () => {
   const [isError, setError] = useState(true);
@@ -45,6 +46,7 @@ const LoginForm = () => {
           {isError && (
             <small className={styles.error}>* please fill all inputs</small>
           )}
+          <LoginSocial/>
         </div>
         <Link className={styles.link} to={ROUTES.SIGN_IN}>Don`t have an account? Sign up</Link>
       </form>
