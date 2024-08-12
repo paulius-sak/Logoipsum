@@ -1,8 +1,10 @@
 import styles from "./BusinessCard.module.scss";
 import Button from "../../../Button/Button";
 import PropTypes from "prop-types";
+import { FaRegStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 
-const BusinessCard = ({ business  }) => {
+const BusinessCard = ({ business }) => {
   return (
     <div className={styles.card}>
       {business.images.length && (
@@ -19,11 +21,15 @@ const BusinessCard = ({ business  }) => {
         <p className={styles.address}>{business.address}</p>
         <Button>Book now</Button>
       </div>
-      
+
+      <div className={styles.favoritesIconWrapper}>
+        <button>
+          <FaRegStar className={styles.icon} size="32px" />
+        </button>
+      </div>
     </div>
   );
 };
-
 
 BusinessCard.propTypes = {
   business: PropTypes.shape({
